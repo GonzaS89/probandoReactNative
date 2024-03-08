@@ -15,16 +15,6 @@ const HomeScreen = () => {
         !listaDeRubros.includes(producto.rubro) && listaDeRubros.push(producto.rubro)
     )
 
-    const [listaRubros , setListaRubros] = useState([]);
-
-    useEffect(
-        catalogoProductos.map(producto => 
-            !listaRubros.includes(producto.rubro) &&
-            setListaRubros([...listaRubros,producto.rubro])
-        )
-    ,catalogoProductos);
-
-
     return (
     
         <View style={{flex : 1}}>

@@ -11,7 +11,7 @@ const Rubro = ( {nombreRubro , imagenRubro} ) => {
 
         <TouchableOpacity 
             activeOpacity={0.7}
-            onPress={() => Navigation.navigate('ListaDeProductos')}
+            onPress={() => Navigation.navigate('ListaDeProductos', {rubroSeleccionado : nombreRubro})}
             style={estilosRubro.container}>
             <Text style={estilosRubro.tituloItem}>{nombreRubro}</Text>
             <Image

@@ -3,9 +3,9 @@ import {
   View,
   Text,
   StyleSheet,
-  TouchableOpacity,
   FlatList,
   Image,
+  Pressable,
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
 
@@ -30,9 +30,9 @@ const ListaDeProductosScreen = () => {
               <Text style={estilosProducto.precio}>$ {producto.precio}</Text>
               <Text style={estilosProducto.comercio}>{producto.comercio}</Text>
               <Text style={estilosProducto.comercio}>{producto.domicilioComercio}</Text>
-              <TouchableOpacity style={estilosProducto.boton}>
+              <Pressable style={estilosProducto.boton}>
                 <Text style={estilosProducto.textoBoton}>Añadir a pedidos</Text>
-              </TouchableOpacity>
+              </Pressable>
             </View>
           )
         }
@@ -87,6 +87,7 @@ const estilosProducto = StyleSheet.create({
   imagen: {
     width: 90,
     height: 90,
+    
   },
 });
 

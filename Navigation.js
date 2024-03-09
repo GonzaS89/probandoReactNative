@@ -21,14 +21,22 @@ function MyStack() {
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerStyle: { backgroundColor: '#FFB534' },
-        headerTitleAlign: 'center'
-      }}
-    >
+        headerTitleAlign: 'center',
+
+      }}>
       <Stack.Screen
         name="Home"
-        options={{headerTitle : 'Rubros'}}
-        component={HomeScreen} />
+        component={HomeScreen}
+        options={{
+          headerTitle : 'Selecciona un rubro',
+          headerTitleStyle :{
+            fontFamily : 'Terciaria',
+            color : '#EEEDEB'
+          },
+          headerStyle : {
+            backgroundColor : '#FF8911',
+          }
+        }} />
       <Stack.Screen
         name="SettingScreen"
         component={SettingScreen} />
@@ -55,7 +63,7 @@ function MyTabs() {
           }
           return <Ionicons name={iconName} size={30} color={'black'} />;
         },
-        tabBarStyle  : {backgroundColor : '#FFB534' ,  height : 60 }
+        tabBarStyle  : {backgroundColor : '#FF8911' ,  height : 60 }
       })}
     >
       <Tab.Screen

@@ -1,7 +1,7 @@
 export default [
     {
-        "imagen" : "vacio",
-        "producto" : "1 kg de vacío",
+        "imagen" : require('../src/iconos/carniceria.png'),
+        "nombre" : "1 kg de vacío",
         "precio" : 5000,
         "comercio" : "Carnicería Supercarnes",
         "domicilioComercio" : "B° La Cancha",
@@ -9,8 +9,8 @@ export default [
         "id" : "778"
     },
     {
-        "imagen" : "chorizos",
-        "producto" : "3 kg de chorizo",
+        "imagen" : require('../src/iconos/carniceria.png'),
+        "nombre" : "3 kg de chorizo",
         "precio" : 2500,
         "comercio" : "Carnicería Supercarnes",
         "domicilioComercio" : "B° La Cancha",
@@ -18,7 +18,8 @@ export default [
         "id" : "800"
     },
     {
-        "producto" : "3 kgs de patamuslo",
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "3 kgs de patamuslo",
         "precio" : 3800,
         "comercio" : "Polleria Pollo",
         "domicilioComercio" : "B° La Avenida",
@@ -26,7 +27,8 @@ export default [
         "id" : "454"
     },
     {
-        "producto" : "1 Kg de Supremas",
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
         "precio" : 3000,
         "comercio" : "Polleria Carlos",
         "domicilioComercio" : "B° La Cancha",
@@ -34,8 +36,8 @@ export default [
         "id" : "784"
     },
     {
-        "imagen" : "papas",
-        "producto" : "3 Kgs de Papas",
+        "imagen" : require('../src/iconos/verduleria.png'),
+        "nombre" : "3 Kgs de Papas",
         "precio" : 1000,
         "comercio" : "Verduleria Del Valle",
         "domicilioComercio" : "B° Tres Luces",
@@ -43,8 +45,8 @@ export default [
         "id" : "484"
     },
     {
-        "imagen" : "yogurt1lmanfrey",
-        "producto" : "Yogurt de 1 ltr Manfrey",
+        "imagen" : require('../src/iconos/lacteos.png'),
+        "nombre" : "Yogurt de 1 ltr Manfrey",
         "precio" : 800,
         "comercio" : "Despensa El Perro",
         "domicilioComercio" : "B° La Flor",
@@ -52,7 +54,8 @@ export default [
         "id" : "969"
     },
     {
-        "producto" : "1 Kg de jamon cocido",
+        "imagen" : require('../src/iconos/fiambreria.png'),
+        "nombre" : "1 Kg de jamon cocido",
         "precio" : 3000,
         "comercio" : "Despensa El Perro",
         "domicilioComercio" : "B° La Flor",
@@ -60,7 +63,7 @@ export default [
         "id" : "960"
     },
     {
-        "producto" : "1 Kg de pan frances",
+        "imagen" : require('../src/iconos/panaderia.png'),        "nombre" : "1 Kg de pan frances",
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",

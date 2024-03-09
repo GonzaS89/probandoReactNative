@@ -22,11 +22,12 @@ function MyStack() {
       initialRouteName="Home"
       screenOptions={{
         headerStyle: { backgroundColor: '#FFB534' },
-        headerTitleAlign: 'center',
+        headerTitleAlign: 'center'
       }}
     >
       <Stack.Screen
         name="Home"
+        options={{headerTitle : 'Rubros'}}
         component={HomeScreen} />
       <Stack.Screen
         name="SettingScreen"
@@ -60,9 +61,9 @@ function MyTabs() {
       <Tab.Screen
         name="HomeScreen"
         component={MyStack} options={{ headerShown: false }} />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="SettingsScreen"
-        component={SettingScreen} />
+        component={SettingScreen} /> */}
     </Tab.Navigator>
   );
 }

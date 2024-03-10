@@ -73,7 +73,7 @@ function MyTabs() {
         tabBarShowLabel: false,
         tabBarBadge : 0,   
         tabBarBadgeStyle: {backgroundColor: 'white' , width: 25 , fontFamily : 'Terciaria'},
-        tabBarIcon: ({ color }) => {
+        tabBarIcon: () => {
           let iconName;
           if (route.name === "HomeScreen") {
             iconName = "home";
@@ -96,9 +96,9 @@ function MyTabs() {
           headerTitleStyle : {fontFamily : 'Terciaria'},
           // headerRight : (props) => <LogoCarrito {...props} />,
           }}/>
-      <Tab.Screen
+      {/* <Tab.Screen
         name="CarritoScreen"
-        component={CarritoScreen} />
+        component={CarritoScreen} /> */}
     </Tab.Navigator>
   );
 }

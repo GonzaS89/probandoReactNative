@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState,useEffect} from "react";
 import { Image } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
@@ -12,7 +12,6 @@ import HomeScreen from "./src/screens/HomeScreen";
 import SettingScreen from "./src/screens/SettingScreen";
 import StackScreen from "./src/screens/StackScreen";
 import ListaDeProductosScreen from "./src/screens/ListaDeProductosScreen";
-import { Button } from "react-native";
 import CarritoScreen from "./src/screens/CarritoScreen";
 
 const Tab = createBottomTabNavigator();
@@ -37,6 +36,9 @@ function LogoCarrito () {
 }
 
 function MyStack() {
+
+
+
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
@@ -54,24 +56,25 @@ function MyStack() {
       <Stack.Screen
         name="ListaDeProductos"
         component={ListaDeProductosScreen}
-        options={{ 
-          headerTitle: "Productos relacionados" ,
-          presentation : "card",
-          headerTitleAlign : 'center',
-          headerTitleStyle : { fontFamily: "Terciaria", textTransform: 'uppercase' , fontSize : 15}
-      }}
+        options={({route}) => ({title : `Productos de ${route.params.titulo}` , 
+        headerTitleAlign : 'center' , headerTitleStyle : {fontFamily : 'Terciaria' , textTransform : 'uppercase'}
+      })}
+      //     headerTitle: "Productos relacionados" ,
+      //     headerTitleAlign : 'center',
+      //     headerTitleStyle : { fontFamily: "Terciaria", textTransform: 'uppercase' , fontSize : 15}
+      // }}
       />
     </Stack.Navigator>
   );
 }
 
 function MyTabs() {
+
   return (
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={({ route }) => ({
         tabBarShowLabel: false,
-        tabBarBadge : 0,   
         tabBarBadgeStyle: {backgroundColor: 'white' , width: 25 , fontFamily : 'Terciaria'},
         tabBarIcon: () => {
           let iconName;
@@ -93,17 +96,19 @@ function MyTabs() {
           headerTitle : (props) => <LogoApp {...props} />,
           headerTitleAlign : 'center',
           headerTintColor : 'white',
-          headerTitleStyle : {fontFamily : 'Terciaria'},
+          headerTitleStyle : {fontFamily : 'Terciaria'}
           // headerRight : (props) => <LogoCarrito {...props} />,
           }}/>
-      {/* <Tab.Screen
+      <Tab.Screen
         name="CarritoScreen"
-        component={CarritoScreen} /> */}
+        component={CarritoScreen} 
+        options={({route}) => ({tabBarBadge : 1 })} />
     </Tab.Navigator>
   );
 }
 
 export default function Navigation() {
+
   return (
     <NavigationContainer>
       <MyTabs />

@@ -1,21 +1,34 @@
-import React from "react";
+import React ,{ useState } from "react";
 import {
   View,
   Text,
   StyleSheet,
   FlatList,
   Image,
-  Pressable,
+  TouchableOpacity
 } from "react-native";
 import { useRoute } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
 //Datos
 
 import catalogoProductos from "../../data/catalogoProductos";
 
 const ListaDeProductosScreen = () => {
+
+  const [botonPresionado , setBotonPresionado] = useState(false);
+
+
+
+  const presionadoDeBoton = (e) => {
+    console.log(e)
+    setBotonPresionado(true)
+  }
+
   const route = useRoute();
   const { rubroSeleccionado } = route.params;
+
+  const Navigation = useNavigation();
 
   return (
     <View style={{ flex: 1, alignItems: "center", backgroundColor: "#1F2544" }}>
@@ -24,15 +37,19 @@ const ListaDeProductosScreen = () => {
         numColumns={2}
         renderItem={({ item: producto }) =>
           producto.rubro == rubroSeleccionado && (
-            <View style={estilosProducto.container}>
+            <View key={producto.id}
+            style={estilosProducto.container}>
               <Image style={estilosProducto.imagen} source={producto.imagen} />
               <Text style={estilosProducto.nombre}>{producto.nombre}</Text>
               <Text style={estilosProducto.precio}>$ {producto.precio}</Text>
               <Text style={estilosProducto.comercio}>{producto.comercio}</Text>
               <Text style={estilosProducto.comercio}>{producto.domicilioComercio}</Text>
-              <Pressable style={estilosProducto.boton}>
-                <Text style={estilosProducto.textoBoton}>Añadir a pedidos</Text>
-              </Pressable>
+              <TouchableOpacity 
+              style={botonPresionado ? estilosProducto.botonPresionado : estilosProducto.boton}
+              onPress={(e)=> presionadoDeBoton(e)}
+              >
+                <Text style={botonPresionado ? estilosProducto.textoBotonPresionado : estilosProducto.textoBoton}>{botonPresionado ? 'Agregado a la lista' : 'Agregar a pedidos'}</Text>
+              </TouchableOpacity>
             </View>
           )
         }
@@ -78,11 +95,27 @@ const estilosProducto = StyleSheet.create({
     alignItems: 'center',
     justifyContent : 'center',
     borderRadius : 15,
+    marginTop : 10,
+    color : 'black'
+  },
+  botonPresionado : {
+    width : '90%',
+    height : 40,
+    backgroundColor : 'transparent',
+    alignItems: 'center',
+    justifyContent : 'center',
+    borderRadius : 15,
     marginTop : 10
   },  
   textoBoton :{
     textTransform : 'uppercase',
-    fontFamily : "Terciaria"
+    fontFamily : "Terciaria",
+    
+  },
+  textoBotonPresionado : {
+    textTransform : 'uppercase',
+    fontFamily : "Terciaria",
+    color : 'green'
   },  
   imagen: {
     width: 90,

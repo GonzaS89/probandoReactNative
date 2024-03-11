@@ -1,7 +1,7 @@
 import React , {useState,useEffect} from "react";
 import { Image } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useRoute } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Ionicons } from "@expo/vector-icons";
@@ -16,6 +16,8 @@ import CarritoScreen from "./src/screens/CarritoScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+
+
 
 function LogoApp() {
   return (
@@ -36,7 +38,6 @@ function LogoCarrito () {
 }
 
 function MyStack() {
-
 
 
   return (
@@ -70,6 +71,8 @@ function MyStack() {
 
 function MyTabs() {
 
+  const [contadorItems,setContadorItems] = useState(0);
+
   return (
     <Tab.Navigator
       initialRouteName="Home"
@@ -102,7 +105,7 @@ function MyTabs() {
       <Tab.Screen
         name="CarritoScreen"
         component={CarritoScreen} 
-        options={({route}) => ({tabBarBadge : 1 })} />
+        options={{tabBarBadge : 10 }} />
     </Tab.Navigator>
   );
 }

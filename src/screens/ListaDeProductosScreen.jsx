@@ -18,10 +18,7 @@ const ListaDeProductosScreen = () => {
 
   const [botonPresionado , setBotonPresionado] = useState(false);
 
-
-
   const presionadoDeBoton = (e) => {
-    console.log(e)
     setBotonPresionado(true)
   }
 

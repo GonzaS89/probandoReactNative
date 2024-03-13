@@ -50,7 +50,7 @@ const estilosRubro = StyleSheet.create({
         width: '100%',
         height: '100%',
         position: 'absolute',
-        opacity: .5,
+        opacity: .45,
         backgroundColor: 'transparent'
     }
 })

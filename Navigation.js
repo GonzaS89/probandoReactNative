@@ -1,4 +1,4 @@
-import React , {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Image } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer, useRoute } from "@react-navigation/native";
@@ -22,16 +22,16 @@ const Stack = createNativeStackNavigator();
 function LogoApp() {
   return (
     <Image
-      style={{ width: 75, height: 75  , marginVertical : 10 }}
+      style={{ width: 75, height: 75, marginVertical: 10 }}
       source={require('./src/iconos/logo-lokerilotene.png')}
     />
   );
 }
 
-function LogoCarrito () {
+function LogoCarrito() {
   return (
     <Image
-      style={{ width: 35, height: 35 , marginRight : 20 }}
+      style={{ width: 35, height: 35, marginRight: 20 }}
       source={require('./src/iconos/carrito.png')}
     />
   );
@@ -39,6 +39,7 @@ function LogoCarrito () {
 
 function MyStack() {
 
+  
 
   return (
     <Stack.Navigator initialRouteName="Home">
@@ -47,19 +48,20 @@ function MyStack() {
         component={HomeScreen}
         options={{
           headerTitle: "Selecciona un rubro",
-          headerTitleAlign : 'center',
+          headerTitleAlign: 'center',
           headerTitleStyle: { fontFamily: "Terciaria", color: "#EEEDEB" },
-          headerStyle: { backgroundColor: "#FF8911"},     
-          headerShown : false
+          headerStyle: { backgroundColor: "#FF8911" },
+          headerShown: false
         }}
       />
       <Stack.Screen name="SettingScreen" component={SettingScreen} />
       <Stack.Screen
         name="ListaDeProductos"
         component={ListaDeProductosScreen}
-        options={({route}) => ({title : `Productos de ${route.params.titulo}` , 
-        headerTitleAlign : 'center' , headerTitleStyle : {fontFamily : 'Terciaria' , textTransform : 'uppercase'}
-      })}
+        options={({ route }) => ({
+          title: `Productos de ${route.params.titulo}`,
+          headerTitleAlign: 'center', headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' }
+        })}
       //     headerTitle: "Productos relacionados" ,
       //     headerTitleAlign : 'center',
       //     headerTitleStyle : { fontFamily: "Terciaria", textTransform: 'uppercase' , fontSize : 15}
@@ -71,14 +73,21 @@ function MyStack() {
 
 function MyTabs() {
 
-  const [contadorItems,setContadorItems] = useState(0);
+  const [contadorItems, setContadorItems] = useState(0);
+  const actualizarItems = (items) => {
+    setContadorItems(contadorItems + items)
+  }
+
+  useEffect(()=> {
+    console.log(contadorItems)
+  },[contadorItems])
 
   return (
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={({ route }) => ({
         tabBarShowLabel: false,
-        tabBarBadgeStyle: {backgroundColor: 'white' , width: 25 , fontFamily : 'Terciaria'},
+        tabBarBadgeStyle: { backgroundColor: 'white', width: 25, fontFamily: 'Terciaria' },
         tabBarIcon: () => {
           let iconName;
           if (route.name === "HomeScreen") {
@@ -88,24 +97,28 @@ function MyTabs() {
           }
           return <Ionicons name={iconName} size={30} color={'black'} />;
         },
-        tabBarStyle  : {backgroundColor : '#FF8911'}
+        tabBarStyle: { backgroundColor: '#FF8911' }
       })}
     >
       <Tab.Screen
         name="HomeScreen"
         component={MyStack}
         options={{
-          headerStyle : {backgroundColor : '#FF8911', height : 100},
-          headerTitle : (props) => <LogoApp {...props} />,
-          headerTitleAlign : 'center',
-          headerTintColor : 'white',
-          headerTitleStyle : {fontFamily : 'Terciaria'}
+          headerStyle: { backgroundColor: '#FF8911', height: 100 },
+          headerTitle: (props) => <LogoApp {...props} />,
+          headerTitleAlign: 'center',
+          headerTintColor: 'white',
+          headerTitleStyle: { fontFamily: 'Terciaria' }
           // headerRight : (props) => <LogoCarrito {...props} />,
-          }}/>
+        }} />
+        <Tab.Screen
+        name="ListaDeProductos"
+        component={ListaDeProductosScreen}
+       initialParams={{ actualizarItems }} />
       <Tab.Screen
         name="CarritoScreen"
-        component={CarritoScreen} 
-        options={{tabBarBadge : 10 }} />
+        component={CarritoScreen}
+        options={{ tabBarBadge: contadorItems  > 0 ? contadorItems : null }} />
     </Tab.Navigator>
   );
 }

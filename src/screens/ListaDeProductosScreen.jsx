@@ -1,4 +1,4 @@
-import React ,{ useState } from "react";
+import React ,{ useState , useEffect} from "react";
 import {
   View,
   Text,
@@ -16,16 +16,25 @@ import catalogoProductos from "../../data/catalogoProductos";
 
 const ListaDeProductosScreen = () => {
 
-  const [botonPresionado , setBotonPresionado] = useState(false);
-
-  const presionadoDeBoton = (e) => {
-    setBotonPresionado(true)
-  }
-
+  
   const route = useRoute();
+  const navigation = useNavigation();
+
+
+  const [botonPresionado , setBotonPresionado] = useState(false);
+  const [items, setItems] = useState(0)
   const { rubroSeleccionado } = route.params;
 
-  const Navigation = useNavigation();
+  const presionadoDeBoton = () => {
+    setBotonPresionado(true);
+    setItems(items + 1)
+  }
+
+
+
+  
+
+
 
   return (
     <View style={{ flex: 1, alignItems: "center", backgroundColor: "#1F2544" }}>
@@ -43,7 +52,7 @@ const ListaDeProductosScreen = () => {
               <Text style={estilosProducto.comercio}>{producto.domicilioComercio}</Text>
               <TouchableOpacity 
               style={botonPresionado ? estilosProducto.botonPresionado : estilosProducto.boton}
-              onPress={(e)=> presionadoDeBoton(e)}
+              onPress={presionadoDeBoton}
               >
                 <Text style={botonPresionado ? estilosProducto.textoBotonPresionado : estilosProducto.textoBoton}>{botonPresionado ? 'Agregado a la lista' : 'Agregar a pedidos'}</Text>
               </TouchableOpacity>
@@ -102,7 +111,8 @@ const estilosProducto = StyleSheet.create({
     alignItems: 'center',
     justifyContent : 'center',
     borderRadius : 15,
-    marginTop : 10
+    marginTop : 10,
+    pointerEvents : 'none'
   },  
   textoBoton :{
     textTransform : 'uppercase',

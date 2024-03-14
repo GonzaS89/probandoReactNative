@@ -14,27 +14,19 @@ import { useNavigation } from "@react-navigation/native";
 
 import catalogoProductos from "../../data/catalogoProductos";
 
-const ListaDeProductosScreen = () => {
-
-  
-  const route = useRoute();
-  const navigation = useNavigation();
+const ListaDeProductosScreen = ({navigation , route}) => {
 
 
   const [botonPresionado , setBotonPresionado] = useState(false);
   const [items, setItems] = useState(0)
   const { rubroSeleccionado } = route.params;
 
+  const incrementarItems = () => {setItems(items + 1)}
+
   const presionadoDeBoton = () => {
-    setBotonPresionado(true);
-    setItems(items + 1)
+    // setBotonPresionado(true);
+    
   }
-
-
-
-  
-
-
 
   return (
     <View style={{ flex: 1, alignItems: "center", backgroundColor: "#1F2544" }}>
@@ -52,7 +44,7 @@ const ListaDeProductosScreen = () => {
               <Text style={estilosProducto.comercio}>{producto.domicilioComercio}</Text>
               <TouchableOpacity 
               style={botonPresionado ? estilosProducto.botonPresionado : estilosProducto.boton}
-              onPress={presionadoDeBoton}
+              onPress={incrementarItems}
               >
                 <Text style={botonPresionado ? estilosProducto.textoBotonPresionado : estilosProducto.textoBoton}>{botonPresionado ? 'Agregado a la lista' : 'Agregar a pedidos'}</Text>
               </TouchableOpacity>

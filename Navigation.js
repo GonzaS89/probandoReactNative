@@ -9,8 +9,6 @@ import { Ionicons } from "@expo/vector-icons";
 //screens
 
 import HomeScreen from "./src/screens/HomeScreen";
-import SettingScreen from "./src/screens/SettingScreen";
-import StackScreen from "./src/screens/StackScreen";
 import ListaDeProductosScreen from "./src/screens/ListaDeProductosScreen";
 import CarritoScreen from "./src/screens/CarritoScreen";
 
@@ -22,7 +20,7 @@ const Stack = createNativeStackNavigator();
 function LogoApp() {
   return (
     <Image
-      style={{ width: 75, height: 75, marginVertical: 10 }}
+      style={{ width: 80, height: 80}}
       source={require('./src/iconos/logo-lokerilotene.png')}
     />
   );
@@ -39,48 +37,42 @@ function LogoCarrito() {
 
 function MyStack() {
 
-  
+  const [items , setItems] = useState(0);
 
+  const actualizarItemsCarrito = (item) => {
+    setItems(item)
+  }
+
+ 
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
         name="Home"
         component={HomeScreen}
         options={{
-          headerTitle: "Selecciona un rubro",
+          headerTitle : (props) => <LogoApp {...props} />,
           headerTitleAlign: 'center',
           headerTitleStyle: { fontFamily: "Terciaria", color: "#EEEDEB" },
-          headerStyle: { backgroundColor: "#FF8911" },
-          headerShown: false
+          headerStyle: { backgroundColor: "#FF204E"},
+          // headerShown: false
         }}
       />
-      <Stack.Screen name="SettingScreen" component={SettingScreen} />
       <Stack.Screen
         name="ListaDeProductos"
         component={ListaDeProductosScreen}
         options={({ route }) => ({
           title: `Productos de ${route.params.titulo}`,
-          headerTitleAlign: 'center', headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' }
+          headerTitleAlign: 'center', 
+          headerStyle : {backgroundColor : '#FF204E'},
+          headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' ,color : 'white'},
+          headerBackVisible : false
         })}
-      //     headerTitle: "Productos relacionados" ,
-      //     headerTitleAlign : 'center',
-      //     headerTitleStyle : { fontFamily: "Terciaria", textTransform: 'uppercase' , fontSize : 15}
-      // }}
-      />
+        />
     </Stack.Navigator>
   );
 }
 
-function MyTabs() {
-
-  const [contadorItems, setContadorItems] = useState(0);
-  const actualizarItems = (items) => {
-    setContadorItems(contadorItems + items)
-  }
-
-  useEffect(()=> {
-    console.log(contadorItems)
-  },[contadorItems])
+function MyTabs() { 
 
   return (
     <Tab.Navigator
@@ -95,30 +87,34 @@ function MyTabs() {
           } else {
             iconName = "cart";
           }
-          return <Ionicons name={iconName} size={30} color={'black'} />;
+          return <Ionicons name={iconName} size={30} color={'white'} />;
         },
-        tabBarStyle: { backgroundColor: '#FF8911' }
+        tabBarStyle: { backgroundColor: '#FF204E' }
       })}
     >
       <Tab.Screen
         name="HomeScreen"
         component={MyStack}
         options={{
-          headerStyle: { backgroundColor: '#FF8911', height: 100 },
-          headerTitle: (props) => <LogoApp {...props} />,
-          headerTitleAlign: 'center',
-          headerTintColor: 'white',
-          headerTitleStyle: { fontFamily: 'Terciaria' }
+          headerShown : false,
+          tabBarBadge : 0
           // headerRight : (props) => <LogoCarrito {...props} />,
         }} />
-        <Tab.Screen
-        name="ListaDeProductos"
-        component={ListaDeProductosScreen}
-       initialParams={{ actualizarItems }} />
       <Tab.Screen
         name="CarritoScreen"
         component={CarritoScreen}
-        options={{ tabBarBadge: contadorItems  > 0 ? contadorItems : null }} />
+        options={{ 
+          headerTitle : 'Carrito',
+          headerTitleAlign : 'center',
+          headerTitleStyle : {
+            fontFamily : 'Terciaria',
+            color : 'white'
+          },
+          headerStyle : {
+            backgroundColor : '#FF204E'
+          }
+
+          }} />
     </Tab.Navigator>
   );
 }

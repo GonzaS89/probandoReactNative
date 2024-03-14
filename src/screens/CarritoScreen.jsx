@@ -4,14 +4,10 @@ import { useRoute } from '@react-navigation/native';
 
 const CarritoScreen = () => {
 
-    const route = useRoute();
-
-    const { data } = route.params;
-
     
     return (
         <View>
-            <Text>{data}</Text>
+            <Text></Text>
         </View>
     )
 }

@@ -20,7 +20,7 @@ const Stack = createNativeStackNavigator();
 function LogoApp() {
   return (
     <Image
-      style={{ width: 80, height: 80}}
+      style={{ width: 60, height: 60}}
       source={require('./src/iconos/logo-lokerilotene.png')}
     />
   );
@@ -50,10 +50,11 @@ function MyStack() {
         name="Home"
         component={HomeScreen}
         options={{
-          headerTitle : (props) => <LogoApp {...props} />,
+
+          headerTitle : 'elegí un rubro',
           headerTitleAlign: 'center',
-          headerTitleStyle: { fontFamily: "Terciaria", color: "#EEEDEB" },
-          headerStyle: { backgroundColor: "#FF204E"},
+          headerTitleStyle: { fontFamily: "Terciaria", color: "#F0F3FF" },
+          headerStyle: { backgroundColor: "#E36414"},
           // headerShown: false
         }}
       />
@@ -63,8 +64,9 @@ function MyStack() {
         options={({ route }) => ({
           title: `Productos de ${route.params.titulo}`,
           headerTitleAlign: 'center', 
-          headerStyle : {backgroundColor : '#FF204E'},
-          headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' ,color : 'white'},
+
+          headerStyle : {backgroundColor : '#E36414'},
+          headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' ,color : '#F0F3FF'},
           headerBackVisible : false
         })}
         />
@@ -76,7 +78,7 @@ function MyTabs() {
 
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="Carrito"
       screenOptions={({ route }) => ({
         tabBarShowLabel: false,
         tabBarBadgeStyle: { backgroundColor: 'white', width: 25, fontFamily: 'Terciaria' },
@@ -87,9 +89,9 @@ function MyTabs() {
           } else {
             iconName = "cart";
           }
-          return <Ionicons name={iconName} size={30} color={'white'} />;
+          return <Ionicons name={iconName} size={30} color={'#F2EFE5'} />;
         },
-        tabBarStyle: { backgroundColor: '#FF204E' }
+        tabBarStyle: { backgroundColor: '#E36414'  , height : 60}
       })}
     >
       <Tab.Screen

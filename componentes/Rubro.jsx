@@ -39,7 +39,7 @@ const estilosRubro = StyleSheet.create({
         textTransform: 'uppercase',
         fontFamily: 'Terciaria',
         zIndex: 50,
-        color: 'white',
+        color: '#F0F3FF',
         textShadowColor: 'black',
         textDecorationStyle: 'solid',
         textShadowOffset: { width: 2, height: 2 },
@@ -50,7 +50,7 @@ const estilosRubro = StyleSheet.create({
         width: '100%',
         height: '100%',
         position: 'absolute',
-        opacity: .45,
+        opacity: .30,
         backgroundColor: 'transparent'
     }
 })

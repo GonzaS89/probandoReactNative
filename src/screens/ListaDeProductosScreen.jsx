@@ -29,7 +29,7 @@ const ListaDeProductosScreen = ({navigation , route}) => {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: "center", backgroundColor: "#1F2544" }}>
+    <View style={{ flex: 1, alignItems: "center", backgroundColor: "#102C57" }}>
       <FlatList
         data={catalogoProductos}
         numColumns={2}
@@ -89,7 +89,7 @@ const estilosProducto = StyleSheet.create({
   boton : {
     width : '90%',
     height : 40,
-    backgroundColor : '#FFB534',
+    backgroundColor : '#F8DE22',
     alignItems: 'center',
     justifyContent : 'center',
     borderRadius : 15,

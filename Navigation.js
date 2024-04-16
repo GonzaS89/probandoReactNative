@@ -85,7 +85,7 @@ function MyTabs() {
         tabBarIcon: () => {
           let iconName;
           if (route.name === "HomeScreen") {
-            iconName = "home";
+            iconName = "hom0";
           } else {
             iconName = "cart";
           }

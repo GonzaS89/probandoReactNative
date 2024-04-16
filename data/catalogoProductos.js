@@ -36,6 +36,96 @@ export default [
         "id" : "784"
     },
     {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
+        "imagen" : require('../src/iconos/polleria.png'),
+        "nombre" : "1 Kg de Supremas",
+        "precio" : 3000,
+        "comercio" : "Polleria Carlos",
+        "domicilioComercio" : "B° La Cancha",
+        "rubro" : "polleria",
+        "id" : "784"
+    },
+    {
         "imagen" : require('../src/iconos/verduleria.png'),
         "nombre" : "3 Kgs de Papas",
         "precio" : 1000,
@@ -63,7 +153,17 @@ export default [
         "id" : "960"
     },
     {
-        "imagen" : require('../src/iconos/panaderia.png'),        "nombre" : "1 Kg de pan frances",
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "rubro" : "panaderia",
+        "id" : "965"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",

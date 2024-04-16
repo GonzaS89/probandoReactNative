@@ -7,8 +7,7 @@ import {
   Image,
   TouchableOpacity
 } from "react-native";
-import { useRoute } from "@react-navigation/native";
-import { useNavigation } from "@react-navigation/native";
+
 
 //Datos
 
@@ -61,10 +60,11 @@ const estilosProducto = StyleSheet.create({
     width: 180,
     backgroundColor: "#EEEDEB",
     marginHorizontal: 10,
+    marginVertical : 10,
     borderRadius: 15,
     alignItems: "center",
     padding: 10,
-    marginTop: 30,
+    // marginTop: 30,
   },
   nombre: {
     fontFamily: "Terciaria",

@@ -54,7 +54,7 @@ function MyStack() {
           headerTitle : 'elegí un rubro',
           headerTitleAlign: 'center',
           headerTitleStyle: { fontFamily: "Terciaria", color: "#F0F3FF" },
-          headerStyle: { backgroundColor: "#E36414"},
+          headerStyle: { backgroundColor: "#41B06E"},
           // headerShown: false
         }}
       />
@@ -65,7 +65,7 @@ function MyStack() {
           title: `Productos de ${route.params.titulo}`,
           headerTitleAlign: 'center', 
 
-          headerStyle : {backgroundColor : '#E36414'},
+          headerStyle : {backgroundColor : '#41B06E'},
           headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' ,color : '#F0F3FF'},
           headerBackVisible : false
         })}
@@ -85,13 +85,13 @@ function MyTabs() {
         tabBarIcon: () => {
           let iconName;
           if (route.name === "HomeScreen") {
-            iconName = "hom0";
+            iconName = "home";
           } else {
             iconName = "cart";
           }
-          return <Ionicons name={iconName} size={30} color={'#F2EFE5'} />;
+          return <Ionicons name={iconName} size={30} color={'white'} />;
         },
-        tabBarStyle: { backgroundColor: '#E36414'  , height : 60}
+        tabBarStyle: { backgroundColor: '#41B06E'  , height : 60}
       })}
     >
       <Tab.Screen
@@ -113,7 +113,7 @@ function MyTabs() {
             color : 'white'
           },
           headerStyle : {
-            backgroundColor : '#FF204E'
+            backgroundColor : '#41B06E'
           }
 
           }} />

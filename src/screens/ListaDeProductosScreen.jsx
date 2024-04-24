@@ -28,7 +28,7 @@ const ListaDeProductosScreen = ({navigation , route}) => {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: "center", backgroundColor: "#102C57" }}>
+    <View style={{ flex: 1, alignItems: "center", backgroundColor: "#FFF5E0" }}>
       <FlatList
         data={catalogoProductos}
         numColumns={2}
@@ -58,16 +58,21 @@ const ListaDeProductosScreen = ({navigation , route}) => {
 const estilosProducto = StyleSheet.create({
   container: {
     width: 180,
-    backgroundColor: "#EEEDEB",
+    backgroundColor: "#FDFFC2",
     marginHorizontal: 10,
     marginVertical : 10,
     borderRadius: 15,
     alignItems: "center",
+    justifyContent : 'space-between',
     padding: 10,
+    borderWidth : .5,
+    borderStyle : "solid",
+    borderColor: '#141E46',
+    minHeight : 300
     // marginTop: 30,
   },
   nombre: {
-    fontFamily: "Terciaria",
+    fontFamily: "Cuarta",
     textTransform: "uppercase",
     fontSize: 20,
     textAlign: "center",
@@ -75,26 +80,28 @@ const estilosProducto = StyleSheet.create({
     marginVertical: 5,
   },
   precio: {
-    fontFamily: "Terciaria",
+    fontFamily: "Cuarta",
     fontSize: 25,
     color: "#12372A",
     marginVertical : 5
   },
   comercio : {
-    fontFamily: "Terciaria",
+    fontFamily: "Cuarta",
     fontSize : 12,
     textAlign: 'center',
+    textTransform: "uppercase",
     marginVertical: 1.5,
+    color : '#A79277'
   },
   boton : {
     width : '90%',
     height : 40,
-    backgroundColor : '#F8DE22',
+    backgroundColor : '#4793AF',
     alignItems: 'center',
     justifyContent : 'center',
     borderRadius : 15,
-    marginTop : 10,
-    color : 'black'
+    marginVertical : 5,
+    color : 'red',
   },
   botonPresionado : {
     width : '90%',
@@ -108,17 +115,19 @@ const estilosProducto = StyleSheet.create({
   },  
   textoBoton :{
     textTransform : 'uppercase',
-    fontFamily : "Terciaria",
+    fontFamily : "Cuarta",
+    color : '#F6F5F2',
+    fontSize : 13
     
   },
   textoBotonPresionado : {
     textTransform : 'uppercase',
-    fontFamily : "Terciaria",
+    fontFamily : "Cuarta",
     color : 'green'
   },  
   imagen: {
-    width: 90,
-    height: 90,
+    width: 75,
+    height: 75,
     
   },
 });

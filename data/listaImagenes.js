@@ -1,7 +1,7 @@
 export default [
     {
         "nombre": "carniceria",
-        "url": "https://s1.eestatic.com/2019/03/26/ciencia/nutricion/carnes-dietas-nutricion_386222785_118855389_1706x960.jpg"
+        "url": "https://w7.pngwing.com/pngs/17/1014/png-transparent-meat-ingredients-ingredients-meat-lean-meat-thumbnail.png"
     },
     {
         "nombre": "polleria",

@@ -17,16 +17,16 @@ const HomeScreen = () => {
 
     return (
 
-        <View style={{ flex: 1, backgroundColor: '#3C3633' }}>
+        <View style={{ flex: 1, backgroundColor: 'white' }}>
             <View>
                 <FlatList
                     data={listaDeRubros}
+                    numColumns={2}
                     renderItem={({ item }) => (
                         listaImagenes.map(imagen =>
                             item === imagen.nombre &&
                             <Rubro
-                                nombreRubro={item}
-                                imagenRubro={imagen.url} />
+                                nombreRubro={item}/>
                         )
                     )}>
                 </FlatList>

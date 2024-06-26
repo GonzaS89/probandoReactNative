@@ -16,7 +16,7 @@ const Rubro = ( {nombreRubro , imagenRubro} ) => {
             <Text style={estilosRubro.tituloItem}>{nombreRubro}</Text>
             <Image
                 style={estilosRubro.imagen}
-                source={{ uri: imagenRubro }} />
+                source={require('../src/imagenes/carnes.png')} />
         </TouchableOpacity>
 
 
@@ -27,31 +27,39 @@ const estilosRubro = StyleSheet.create({
     container: {
         flex: 1,
         height: 200,
-        width: '100%',
-        borderColor: 'black',
+        width: 300,
+        borderColor: 'grey',
         borderWidth: 2,
-        justifyContent: 'center',
-        backgroundColor: 'black'
+        // justifyContent: 'center',
+        backgroundColor: '#F0F3FF',
+        borderRadius:25,
+        overflow : 'hidden',
+        marginHorizontal: 2,
+        marginVertical: 2
     },
     tituloItem: {
-        textAlign: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        fontFamily: 'Terciaria',
+        fontSize: 20,
+        textTransform: 'capitalize',
+        fontFamily: 'Primaria',
         zIndex: 50,
-        color: '#F0F3FF',
-        textShadowColor: 'black',
+        marginHorizontal : 10,
+        marginVertical: 10,
+        color: 'black',
+        // textShadowColor: 'black',
         textDecorationStyle: 'solid',
         textShadowOffset: { width: 2, height: 2 },
         textShadowRadius: 5,
-        width: '100%'
+        width: '100%',
     },
     imagen: {
-        width: '100%',
-        height: '100%',
+        width: 150,
+        height: 200,
+        marginBottom : -50,
         position: 'absolute',
-        opacity: .60,
-        backgroundColor: 'transparent'
+        bottom: 0,
+        right: 0
+        // opacity: .60,
+        // backgroundColor: 'transparent'
     }
 })
 

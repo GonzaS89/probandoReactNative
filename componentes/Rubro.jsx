@@ -16,7 +16,7 @@ const Rubro = ( {nombreRubro , imagenRubro} ) => {
             <Text style={estilosRubro.tituloItem}>{nombreRubro}</Text>
             <Image
                 style={estilosRubro.imagen}
-                source={require('../src/imagenes/carnes.png')} />
+                source={require('../src/imagenes/pollo.png')} />
         </TouchableOpacity>
 
 
@@ -52,7 +52,7 @@ const estilosRubro = StyleSheet.create({
         width: '100%',
     },
     imagen: {
-        width: 150,
+        width: '100%',
         height: 200,
         marginBottom : -50,
         position: 'absolute',

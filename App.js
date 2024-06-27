@@ -8,7 +8,8 @@ export default function App() {
     'Primaria' : require('./assets/fuentes/MadimiOne-Regular.ttf'),
     'Secundaria' : require('./assets/fuentes/PermanentMarker-Regular.ttf'),
     'Terciaria' : require('./assets/fuentes/LuckiestGuy-Regular.ttf'),
-    'Cuarta' : require('./assets/fuentes/ProtestStrike-Regular.ttf')
+    'Cuarta' : require('./assets/fuentes/ProtestStrike-Regular.ttf'),
+    'Quinta' : require ('./assets/fuentes/Urbanist-Regular.ttf')
   })
 
   if(!fontsLoaded) {return undefined}

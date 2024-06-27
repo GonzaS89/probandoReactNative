@@ -22,11 +22,6 @@ const ListaDeProductosScreen = ({navigation , route}) => {
 
   const incrementarItems = () => {setItems(items + 1)}
 
-  const presionadoDeBoton = () => {
-    // setBotonPresionado(true);
-    
-  }
-
   return (
     <View style={{ flex: 1, alignItems: "center", backgroundColor: "#FFF5E0" }}>
       <FlatList

@@ -16,12 +16,14 @@ const HomeScreen = () => {
     )
 
     return (
-
-        <View style={{ flex: 1, backgroundColor: 'white' }}>
-            <View>
+        
+        <View style={{ flex: 1, backgroundColor: '#FFFF80' }}>
+            <View style = {{backgroundColor : 'white' , paddingVertical : 15 , paddingHorizontal : 5}}> 
+                <Text style = {{fontFamily : 'Quinta', fontSize : 20 , fontWeight : 800 , marginBottom : 20, marginLeft : 5}}>
+                    Productos por categoria</Text>
                 <FlatList
                     data={listaDeRubros}
-                    numColumns={2}
+                    numColumns={3}
                     renderItem={({ item }) => (
                         listaImagenes.map(imagen =>
                             item === imagen.nombre &&

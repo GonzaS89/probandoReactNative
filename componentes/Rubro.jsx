@@ -2,8 +2,17 @@ import React from 'react';
 import { Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
+import listaImagenes from "../data/listaImagenes";
 
-const Rubro = ( {nombreRubro , imagenRubro} ) => {
+let imagen;
+
+const Rubro = ( {nombreRubro} ) => {
+
+    listaImagenes.forEach(element => {
+        return imagen = element.nombre == 'lacteos' && element.url
+    });
+
+    // console.log(imagen)
 
     const Navigation = useNavigation();
 
@@ -16,7 +25,7 @@ const Rubro = ( {nombreRubro , imagenRubro} ) => {
             <Text style={estilosRubro.tituloItem}>{nombreRubro}</Text>
             <Image
                 style={estilosRubro.imagen}
-                source={require('../src/imagenes/pollo.png')} />
+                source={{uri : imagen}} />
         </TouchableOpacity>
 
 
@@ -26,34 +35,34 @@ const Rubro = ( {nombreRubro , imagenRubro} ) => {
 const estilosRubro = StyleSheet.create({
     container: {
         flex: 1,
-        height: 200,
-        width: 300,
+        height: 150,
+        width: 150,
         borderColor: 'grey',
-        borderWidth: 2,
+        // borderWidth: 2,
         // justifyContent: 'center',
-        backgroundColor: '#F0F3FF',
+        backgroundColor: '#EEEEEE',
         borderRadius:25,
         overflow : 'hidden',
         marginHorizontal: 2,
         marginVertical: 2
     },
     tituloItem: {
-        fontSize: 20,
+        fontSize: 15,
         textTransform: 'capitalize',
-        fontFamily: 'Primaria',
+        fontWeight : 'bold',
+        fontFamily: 'Quinta',
         zIndex: 50,
         marginHorizontal : 10,
         marginVertical: 10,
-        color: 'black',
         // textShadowColor: 'black',
         textDecorationStyle: 'solid',
-        textShadowOffset: { width: 2, height: 2 },
+        // textShadowOffset: { width: 2, height: 2 },
         textShadowRadius: 5,
         width: '100%',
     },
     imagen: {
         width: '100%',
-        height: 200,
+        height: '100%',
         marginBottom : -50,
         position: 'absolute',
         bottom: 0,

@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Navigation from './Navigation';
 import {useFonts} from 'expo-font';
 
+
 export default function App() {
 
   const [fontsLoaded] = useFonts({

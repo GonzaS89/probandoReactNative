@@ -4,15 +4,9 @@ import { useNavigation } from '@react-navigation/native';
 
 import listaImagenes from "../data/listaImagenes";
 
-let imagen;
 
-const Rubro = ( {nombreRubro} ) => {
 
-    listaImagenes.forEach(element => {
-        return imagen = element.nombre == 'lacteos' && element.url
-    });
-
-    // console.log(imagen)
+const Rubro = ( {nombreRubro , imagenRubro} ) => {
 
     const Navigation = useNavigation();
 
@@ -20,12 +14,12 @@ const Rubro = ( {nombreRubro} ) => {
 
         <TouchableOpacity 
             activeOpacity={0.7}
-            onPress={() => Navigation.navigate('ListaDeProductos', {rubroSeleccionado : nombreRubro , titulo : nombreRubro})}
+            onPress={() => Navigation.navigate('ListaDeProductos', {rubroSeleccionado : nombreRubro , titulo : nombreRubro , imagenRubroSeleccionado : imagenRubro})}
             style={estilosRubro.container}>
             <Text style={estilosRubro.tituloItem}>{nombreRubro}</Text>
             <Image
                 style={estilosRubro.imagen}
-                source={{uri : imagen}} />
+                source={{uri : imagenRubro}}/>
         </TouchableOpacity>
 
 
@@ -44,20 +38,21 @@ const estilosRubro = StyleSheet.create({
         borderRadius:25,
         overflow : 'hidden',
         marginHorizontal: 2,
-        marginVertical: 2
+        marginVertical: 2,
+       
     },
     tituloItem: {
         fontSize: 15,
         textTransform: 'capitalize',
         fontWeight : 'bold',
-        fontFamily: 'Quinta',
+        fontFamily : 'Quinta',
         zIndex: 50,
         marginHorizontal : 10,
         marginVertical: 10,
-        // textShadowColor: 'black',
-        textDecorationStyle: 'solid',
-        // textShadowOffset: { width: 2, height: 2 },
-        textShadowRadius: 5,
+        // // textShadowColor: 'black',
+        // textDecorationStyle: 'solid',
+        // // textShadowOffset: { width: 2, height: 2 },
+        // textShadowRadius: 5,
         width: '100%',
     },
     imagen: {

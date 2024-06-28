@@ -12,6 +12,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ListaDeProductosScreen from "./src/screens/ListaDeProductosScreen";
 import CarritoScreen from "./src/screens/CarritoScreen";
 
+
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
@@ -50,10 +51,10 @@ function MyStack() {
         name="Home"
         component={HomeScreen}
         options={{
-
-          headerTitle : 'elegí un rubro',
+          // headerShown : false,
+          headerTitle : 'Productos por categorías',
           headerTitleAlign: 'center',
-          headerTitleStyle: { fontFamily: "Terciaria", color: "#F0F3FF" },
+          headerTitleStyle: { fontFamily: "Cuarta", color: "#F0F3FF" },
           headerStyle: { backgroundColor: "#41B06E"},
           // headerShown: false
         }}
@@ -64,7 +65,6 @@ function MyStack() {
         options={({ route }) => ({
           title: `Productos de ${route.params.titulo}`,
           headerTitleAlign: 'center', 
-
           headerStyle : {backgroundColor : '#41B06E'},
           headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' ,color : '#F0F3FF'},
           headerBackVisible : false

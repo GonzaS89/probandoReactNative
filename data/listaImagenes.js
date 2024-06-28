@@ -1,7 +1,7 @@
 export default [
     {
         "nombre": "carniceria",
-        "url": "https://w7.pngwing.com/pngs/17/1014/png-transparent-meat-ingredients-ingredients-meat-lean-meat-thumbnail.png"
+        "url": "https://www.infocampo.com.ar/wp-content/uploads/2019/04/carniceria.jpg"
     },
     {
         "nombre": "polleria",

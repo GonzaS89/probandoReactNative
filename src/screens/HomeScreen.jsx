@@ -24,7 +24,7 @@ const HomeScreen = () => {
                 paddingHorizontal : 5
                 }}> 
                 <Text style = {{
-                    fontSize : 20 , 
+                    fontSize : 17.5 , 
                     fontWeight : 800 , 
                     marginBottom : 20, 
                     marginLeft : 5,

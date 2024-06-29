@@ -44,8 +44,8 @@ const estilosRubro = StyleSheet.create({
     tituloItem: {
         fontSize: 15,
         textTransform: 'capitalize',
-        fontWeight : 'bold',
-        fontFamily : 'Quinta',
+        // fontWeight : 'bold',
+        // fontFamily : 'Quinta',
         zIndex: 50,
         marginHorizontal : 10,
         marginVertical: 10,

@@ -19,7 +19,7 @@ export default [
     },
     {
         "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "3 kgs de patamuslo",
+        "nombre" : "3 kgs de Patamuslo",
         "precio" : 3800,
         "comercio" : "Polleria Pollo",
         "domicilioComercio" : "B° La Avenida",
@@ -53,86 +53,61 @@ export default [
         "rubro" : "polleria",
         "id" : "789"
     },
+
+    // {
+    //     "imagen" : require('../src/iconos/polleria.png'),
+    //     "nombre" : "1 Kg de Supremas",
+    //     "precio" : 3000,
+    //     "comercio" : "Polleria Carlos",
+    //     "domicilioComercio" : "B° La Cancha",
+    //     "rubro" : "polleria",
+    //     "id" : "794"
+    // },
+    // {
+    //     "imagen" : require('../src/iconos/polleria.png'),
+    //     "nombre" : "1 Kg de Supremas",
+    //     "precio" : 3000,
+    //     "comercio" : "Polleria Carlos",
+    //     "domicilioComercio" : "B° La Cancha",
+    //     "rubro" : "polleria",
+    //     "id" : "714"
+    // },
+    // {
+    //     "imagen" : require('../src/iconos/polleria.png'),
+    //     "nombre" : "1 Kg de Supremas",
+    //     "precio" : 3000,
+    //     "comercio" : "Polleria Carlos",
+    //     "domicilioComercio" : "B° La Cancha",
+    //     "rubro" : "polleria",
+    //     "id" : "764"
+    // },
+    // {
+    //     "imagen" : require('../src/iconos/polleria.png'),
+    //     "nombre" : "1 Kg de Supremas",
+    //     "precio" : 3000,
+    //     "comercio" : "Polleria Carlos",
+    //     "domicilioComercio" : "B° La Cancha",
+    //     "rubro" : "polleria",
+    //     "id" : "783"
+    // },
+    // {
+    //     "imagen" : require('../src/iconos/polleria.png'),
+    //     "nombre" : "1 Kg de Supremas",
+    //     "precio" : 3000,
+    //     "comercio" : "Polleria Carlos",
+    //     "domicilioComercio" : "B° La Cancha",
+    //     "rubro" : "polleria",
+    //     "id" : "780"
+    // },
     {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "781"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "704"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "79"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "794"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "714"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "764"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "783"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "780"
-    },
-    {
-        "imagen" : require('../src/iconos/verduleria.png'),
+        // "imagen" : require('../src/iconos/verduleria.png'),
         "nombre" : "3 Kgs de Papas",
         "precio" : 1000,
         "comercio" : "Verduleria Del Valle",
         "domicilioComercio" : "B° Tres Luces",
         "rubro" : "verduleria",
-        "id" : "484"
+        // "id" : "484"
+        "id" : 1
     },
     {
         "imagen" : require('../src/iconos/lacteos.png'),

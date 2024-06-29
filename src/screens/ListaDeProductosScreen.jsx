@@ -78,25 +78,25 @@ const estilosProducto = StyleSheet.create({
     marginLeft : 25,
   },
   nombre: {
-    fontFamily: "Quinta",
-    textTransform: "uppercase",
+    // fontFamily: "Quinta",
+    
     fontSize: 17.5,
     // textAlign: "center",
     color: "#12372A",
     marginVertical: 5,
   },
   precio: {
-    fontFamily: "Quinta",
+    // fontFamily: "Quinta",
     fontSize: 18,
     color: "#12372A",
     marginVertical : 5,
     fontWeight : 'bold',
   },
   comercio : {
-    fontFamily: "Quinta",
-    fontSize : 10,
-    // textAlign: 'center',
-    textTransform: "uppercase",
+    // fontFamily: "Quinta",
+    fontSize : 12.5,
+    // // textAlign: 'center',
+    // textTransform: "uppercase",
     marginVertical: 1.5,
     color : '#A79277'
   },
@@ -110,31 +110,8 @@ const estilosProducto = StyleSheet.create({
     marginVertical : 5,
     color : 'red',
   },
-  botonPresionado : {
-    width : '90%',
-    height : 40,
-    backgroundColor : 'transparent',
-    alignItems: 'center',
-    justifyContent : 'center',
-    borderRadius : 15,
-    marginTop : 10,
-    pointerEvents : 'none'
-  },  
-  textoBoton :{
-    textTransform : 'uppercase',
-    fontFamily : "Cuarta",
-    color : '#F6F5F2',
-    fontSize : 13
-    
-  },
-  textoBotonPresionado : {
-    textTransform : 'uppercase',
-    fontFamily : "Cuarta",
-    color : 'green'
-  },
   contImagen : {
     backgroundColor : '#EEEDEB',
-    
     width : 110,
     height : 110
   },  

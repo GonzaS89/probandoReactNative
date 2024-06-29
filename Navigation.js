@@ -54,7 +54,7 @@ function MyStack() {
           // headerShown : false,
           headerTitle : 'Productos por categorías',
           headerTitleAlign: 'center',
-          headerTitleStyle: { fontFamily: "Cuarta", color: "#F0F3FF" },
+          headerTitleStyle: { color: "#F0F3FF" },
           headerStyle: { backgroundColor: "#41B06E"},
           // headerShown: false
         }}
@@ -66,7 +66,7 @@ function MyStack() {
           title: `Productos de ${route.params.titulo}`,
           headerTitleAlign: 'center', 
           headerStyle : {backgroundColor : '#41B06E'},
-          headerTitleStyle: { fontFamily: 'Terciaria', textTransform: 'uppercase' ,color : '#F0F3FF'},
+          headerTitleStyle: { textTransform: 'uppercase' ,color : '#F0F3FF'},
           headerBackVisible : false
         })}
         />
@@ -81,7 +81,7 @@ function MyTabs() {
       initialRouteName="Carrito"
       screenOptions={({ route }) => ({
         tabBarShowLabel: false,
-        tabBarBadgeStyle: { backgroundColor: 'white', width: 25, fontFamily: 'Terciaria' },
+        tabBarBadgeStyle: { backgroundColor: 'white', width: 25},
         tabBarIcon: () => {
           let iconName;
           if (route.name === "HomeScreen") {
@@ -109,7 +109,6 @@ function MyTabs() {
           headerTitle : 'Carrito',
           headerTitleAlign : 'center',
           headerTitleStyle : {
-            fontFamily : 'Terciaria',
             color : 'white'
           },
           headerStyle : {

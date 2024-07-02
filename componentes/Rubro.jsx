@@ -21,8 +21,6 @@ const Rubro = ( {nombreRubro , imagenRubro} ) => {
                 style={estilosRubro.imagen}
                 source={{uri : imagenRubro}}/>
         </TouchableOpacity>
-
-
     )
 }
 
@@ -61,7 +59,6 @@ const estilosRubro = StyleSheet.create({
         marginBottom : -50,
         position: 'absolute',
         bottom: 0,
-        right: 0
         // opacity: .60,
         // backgroundColor: 'transparent'
     }

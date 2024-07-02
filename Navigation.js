@@ -63,7 +63,7 @@ function MyStack() {
         name="ListaDeProductos"
         component={ListaDeProductosScreen}
         options={({ route }) => ({
-          title: `Productos de ${route.params.titulo}`,
+          title: `Productos ${route.params.titulo}`,
           headerTitleAlign: 'center', 
           headerStyle : {backgroundColor : '#41B06E'},
           headerTitleStyle: { textTransform: 'uppercase' ,color : '#F0F3FF'},

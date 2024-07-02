@@ -1,4 +1,3 @@
-import { StyleSheet, Text, View } from 'react-native';
 import Navigation from './Navigation';
 import {useFonts} from 'expo-font';
 

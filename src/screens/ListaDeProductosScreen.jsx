@@ -1,11 +1,10 @@
-import React ,{ useState , useEffect} from "react";
+import React ,{ useState} from "react";
 import {
   View,
   Text,
   StyleSheet,
   FlatList,
   Image,
-  TouchableOpacity
 } from "react-native";
 
 
@@ -13,22 +12,17 @@ import {
 
 import catalogoProductos from "../../data/catalogoProductos";
 
-const ListaDeProductosScreen = ({navigation , route}) => {
+const ListaDeProductosScreen = ({route}) => {
 
-
-  const [botonPresionado , setBotonPresionado] = useState(false);
-  const [items, setItems] = useState(0)
   const { rubroSeleccionado } = route.params;
   const { imagenRubroSeleccionado } = route.params;
-
-  const incrementarItems = () => {setItems(items + 1)}
 
   return (
     <View style={{ flex: 1, alignItems: "center", backgroundColor: "#FFFF80" }}>
       <FlatList
         data={catalogoProductos}
         renderItem={({ item: producto }) =>
-          producto.rubro == rubroSeleccionado && (
+          producto.rubro === rubroSeleccionado && 
             <View key={producto.id}
             style={estilosProducto.container}>
               <View style = {estilosProducto.contImagen}>
@@ -42,14 +36,8 @@ const ListaDeProductosScreen = ({navigation , route}) => {
               <Text style={estilosProducto.comercio}>{producto.comercio}</Text>
               <Text style={estilosProducto.comercio}>{producto.domicilioComercio}</Text>
               </View>
-              {/* <TouchableOpacity 
-              style={botonPresionado ? estilosProducto.botonPresionado : estilosProducto.boton}
-              onPress={incrementarItems}
-              >
-                <Text style={botonPresionado ? estilosProducto.textoBotonPresionado : estilosProducto.textoBoton}>{botonPresionado ? 'Agregado a la lista' : 'Agregar a pedidos'}</Text>
-              </TouchableOpacity> */}
             </View>
-          )
+          
         }
       ></FlatList>
     </View>

@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, Image } from 'react-native';
-import listaImagenes from '../../data/listaImagenes';
 import catalogoProductos from '../../data/catalogoProductos';
-import Rubro from '../../componentes/Rubro';
+import Categoria from '../../componentes/Categoria';
 
 
 
 
 const HomeScreen = () => {
 
-    const listaDeRubros = [];
+    const listaDeCategorias = [];
 
     catalogoProductos.map(producto =>
-        !listaDeRubros.includes(producto.rubro) && listaDeRubros.push(producto.rubro)
+        !listaDeCategorias.includes(producto.categoria) && listaDeCategorias.push(producto.categoria)
     )
 
     return (
         
         <View style={{ flex: 1, backgroundColor: '#FFFF80' }}>
-            <View style = {{
+            <FlatList 
+                data = {listaDeCategorias}
+                renderItem={({ item }) => <Categoria nombreCategoria = {item}/>
+                }
+            >
+            </FlatList>
+            {/* <View style = {{
                 backgroundColor : 'white' , 
                 paddingVertical : 15 , 
                 paddingHorizontal : 5
@@ -47,7 +52,7 @@ const HomeScreen = () => {
                         )
                     )}>
                 </FlatList>
-            </View>
+            </View> */}
         </View>
     )
 }

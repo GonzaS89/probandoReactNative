@@ -5,17 +5,9 @@ export default [
         "precio" : 5000,
         "comercio" : "Carnicería Supercarnes",
         "domicilioComercio" : "B° La Cancha",
+        "categoria" : 'comestibles',
         "rubro" : "carniceria",
         "id" : "778"
-    },
-    {
-        "imagen" : require('../src/iconos/carniceria.png'),
-        "nombre" : "3 kg de chorizo",
-        "precio" : 2500,
-        "comercio" : "Carnicería Supercarnes",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "carniceria",
-        "id" : "800"
     },
     {
         "imagen" : require('../src/iconos/polleria.png'),
@@ -23,91 +15,19 @@ export default [
         "precio" : 3800,
         "comercio" : "Polleria Pollo",
         "domicilioComercio" : "B° La Avenida",
+        "categoria" : 'comestibles',
         "rubro" : "polleria",
         "id" : "454"
     },
     {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "784"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "786"
-    },
-    {
-        "imagen" : require('../src/iconos/polleria.png'),
-        "nombre" : "1 Kg de Supremas",
-        "precio" : 3000,
-        "comercio" : "Polleria Carlos",
-        "domicilioComercio" : "B° La Cancha",
-        "rubro" : "polleria",
-        "id" : "789"
-    },
-
-    // {
-    //     "imagen" : require('../src/iconos/polleria.png'),
-    //     "nombre" : "1 Kg de Supremas",
-    //     "precio" : 3000,
-    //     "comercio" : "Polleria Carlos",
-    //     "domicilioComercio" : "B° La Cancha",
-    //     "rubro" : "polleria",
-    //     "id" : "794"
-    // },
-    // {
-    //     "imagen" : require('../src/iconos/polleria.png'),
-    //     "nombre" : "1 Kg de Supremas",
-    //     "precio" : 3000,
-    //     "comercio" : "Polleria Carlos",
-    //     "domicilioComercio" : "B° La Cancha",
-    //     "rubro" : "polleria",
-    //     "id" : "714"
-    // },
-    // {
-    //     "imagen" : require('../src/iconos/polleria.png'),
-    //     "nombre" : "1 Kg de Supremas",
-    //     "precio" : 3000,
-    //     "comercio" : "Polleria Carlos",
-    //     "domicilioComercio" : "B° La Cancha",
-    //     "rubro" : "polleria",
-    //     "id" : "764"
-    // },
-    // {
-    //     "imagen" : require('../src/iconos/polleria.png'),
-    //     "nombre" : "1 Kg de Supremas",
-    //     "precio" : 3000,
-    //     "comercio" : "Polleria Carlos",
-    //     "domicilioComercio" : "B° La Cancha",
-    //     "rubro" : "polleria",
-    //     "id" : "783"
-    // },
-    // {
-    //     "imagen" : require('../src/iconos/polleria.png'),
-    //     "nombre" : "1 Kg de Supremas",
-    //     "precio" : 3000,
-    //     "comercio" : "Polleria Carlos",
-    //     "domicilioComercio" : "B° La Cancha",
-    //     "rubro" : "polleria",
-    //     "id" : "780"
-    // },
-    {
-        // "imagen" : require('../src/iconos/verduleria.png'),
+        "imagen" : require('../src/iconos/verduleria.png'),
         "nombre" : "3 Kgs de Papas",
         "precio" : 1000,
         "comercio" : "Verduleria Del Valle",
         "domicilioComercio" : "B° Tres Luces",
+        "categoria" : 'comestibles',
         "rubro" : "verduleria",
-        // "id" : "484"
-        "id" : 1
+        "id" : '11'
     },
     {
         "imagen" : require('../src/iconos/lacteos.png'),
@@ -115,6 +35,7 @@ export default [
         "precio" : 800,
         "comercio" : "Despensa El Perro",
         "domicilioComercio" : "B° La Flor",
+        "categoria" : 'comestibles',
         "rubro" : "lacteos",
         "id" : "969"
     },
@@ -124,17 +45,19 @@ export default [
         "precio" : 3000,
         "comercio" : "Despensa El Perro",
         "domicilioComercio" : "B° La Flor",
+        "categoria" : 'comestibles',
         "rubro" : "fiambreria",
         "id" : "960"
     },
     {
-        "imagen" : require('../src/iconos/panaderia.png'),        
-        "nombre" : "1 Kg de pan frances",
-        "precio" : 1500,
-        "comercio" : "Panaderia Carlos",
-        "domicilioComercio" : "B° La Villa",
-        "rubro" : "panaderia",
-        "id" : "9645"
+        "imagen" : require('../src/iconos/fiambreria.png'),
+        "nombre" : "1 Kg de Cantinpalo",
+        "precio" : 6000,
+        "comercio" : "Despensa El Perro",
+        "domicilioComercio" : "B° La Flor",
+        "categoria" : 'comestibles',
+        "rubro" : "fiambreria",
+        "id" : "961"
     },
     {
         "imagen" : require('../src/iconos/panaderia.png'),        
@@ -142,7 +65,48 @@ export default [
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",
+        "categoria" : 'comestibles',
         "rubro" : "panaderia",
         "id" : "965"
-    }
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'higiene',
+        "rubro" : "bebes",
+        "id" : "1000"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'higiene',
+        "rubro" : "bebes",
+        "id" : "90000"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'higiene',
+        "rubro" : "adultos",
+        "id" : "8300"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'higiene',
+        "rubro" : "general",
+        "id" : "800"
+    },
 ]

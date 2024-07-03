@@ -20,16 +20,15 @@ const Categoria = ({nombreCategoria}) => {
 
     return (
 
-        <View style = {{backgroundColor : 'white' , width : '100%' ,paddingHorizontal : 10 , paddingVertical : 15 , marginBottom : 3 , borderRadius : 20}}>
+        <View style = {{backgroundColor : '#F9E2AF' ,paddingHorizontal : 10 ,marginHorizontal : 5, paddingVertical : 15 , marginVertical : 5 , borderRadius : 10 , borderWidth : 1 , borderColor : 'black'}}>
 
-            <Text style = {{textTransform : 'uppercase' , fontWeight : 'bold' , textAlign : 'center' , fontSize : 18 , marginBottom : 20 , letterSpacing : 2 }}>{nombreCategoria}</Text>
+            <Text style = {{textTransform : 'uppercase' , fontWeight : 'bold' , fontSize : 17.5 ,textAlign : 'center' ,  marginBottom : 20 , marginLeft : 15 , backgroundColor : '#131842' , color : 'white', paddingVertical : 5 , borderRadius : 20}}>{nombreCategoria}</Text>
 
             <FlatList
                     data={listaDeRubros}
-                    numColumns={3}
+                    numColumns={2}
                     renderItem={({ item }) => (
-                        listaImagenes.map(imagen =>
-                            item === imagen.nombre &&
+                        listaImagenes.map(imagen => item === imagen.nombre &&
                             <Rubro
                                 nombreRubro={item}
                                 imagenRubro={imagen.url}/>

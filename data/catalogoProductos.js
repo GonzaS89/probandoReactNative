@@ -75,7 +75,7 @@ export default [
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",
-        "categoria" : 'higiene',
+        "categoria" : 'higiene personal',
         "rubro" : "bebes",
         "id" : "1000"
     },
@@ -85,7 +85,7 @@ export default [
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",
-        "categoria" : 'higiene',
+        "categoria" : 'higiene personal',
         "rubro" : "bebes",
         "id" : "90000"
     },
@@ -95,7 +95,7 @@ export default [
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",
-        "categoria" : 'higiene',
+        "categoria" : 'higiene personal',
         "rubro" : "adultos",
         "id" : "8300"
     },
@@ -105,8 +105,68 @@ export default [
         "precio" : 1500,
         "comercio" : "Panaderia Carlos",
         "domicilioComercio" : "B° La Villa",
-        "categoria" : 'higiene',
+        "categoria" : 'higiene personal',
         "rubro" : "general",
         "id" : "800"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'articulos de limpieza',
+        "rubro" : "limpieza de ambientes",
+        "id" : "805"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'articulos de limpieza',
+        "rubro" : "lavado de ropa",
+        "id" : "806"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'comestibles',
+        "rubro" : "pasteleria",
+        "id" : "807"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'forrajeria',
+        "rubro" : "alimento para mascotas",
+        "id" : "807"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'forrajeria',
+        "rubro" : "accesorios para mascotas",
+        "id" : "807"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 Kg de pan frances",
+        "precio" : 1500,
+        "comercio" : "Panaderia Carlos",
+        "domicilioComercio" : "B° La Villa",
+        "categoria" : 'forrajeria',
+        "rubro" : "frutos secos y snacks",
+        "id" : "807"
     },
 ]

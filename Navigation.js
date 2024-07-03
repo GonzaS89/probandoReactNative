@@ -55,7 +55,7 @@ function MyStack() {
           headerTitle : 'Productos por categorías',
           headerTitleAlign: 'center',
           headerTitleStyle: { color: "#F0F3FF" },
-          headerStyle: { backgroundColor: "#41B06E"},
+          headerStyle: { backgroundColor: "#0F67B1"},
           // headerShown: false
         }}
       />
@@ -65,7 +65,7 @@ function MyStack() {
         options={({ route }) => ({
           title: `Productos ${route.params.titulo}`,
           headerTitleAlign: 'center', 
-          headerStyle : {backgroundColor : '#41B06E'},
+          headerStyle : {backgroundColor : '#0F67B1'},
           headerTitleStyle: { textTransform: 'uppercase' ,color : '#F0F3FF'},
           headerBackVisible : false
         })}
@@ -91,31 +91,16 @@ function MyTabs() {
           }
           return <Ionicons name={iconName} size={30} color={'white'} />;
         },
-        tabBarStyle: { backgroundColor: '#41B06E'  , height : 60}
+        tabBarStyle: { backgroundColor: '#0F67B1'  , height : 60}
       })}
     >
       <Tab.Screen
         name="HomeScreen"
         component={MyStack}
         options={{
-          headerShown : false,
-          tabBarBadge : 0
+          headerShown : false
           // headerRight : (props) => <LogoCarrito {...props} />,
         }} />
-      <Tab.Screen
-        name="CarritoScreen"
-        component={CarritoScreen}
-        options={{ 
-          headerTitle : 'Carrito',
-          headerTitleAlign : 'center',
-          headerTitleStyle : {
-            color : 'white'
-          },
-          headerStyle : {
-            backgroundColor : '#41B06E'
-          }
-
-          }} />
     </Tab.Navigator>
   );
 }

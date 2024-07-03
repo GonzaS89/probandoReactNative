@@ -38,17 +38,12 @@ const estilosProducto = StyleSheet.create({
       borderStyle : "solid",
       borderColor: '#141E46',
       minHeight : 150
-      
-      // marginTop: 30,
     },
     detalle :{
       marginLeft : 25,
     },
     nombre: {
-      // fontFamily: "Quinta",
-      
       fontSize: 17.5,
-      // textAlign: "center",
       color: "#12372A",
       marginVertical: 5,
     },
@@ -60,10 +55,7 @@ const estilosProducto = StyleSheet.create({
       fontWeight : 'bold',
     },
     comercio : {
-      // fontFamily: "Quinta",
       fontSize : 12.5,
-      // // textAlign: 'center',
-      // textTransform: "uppercase",
       marginVertical: 1.5,
       color : '#A79277'
     },

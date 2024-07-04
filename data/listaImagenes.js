@@ -1,15 +1,15 @@
 export default [
     {
         "nombre": "carniceria",
-        "url": "https://www.infocampo.com.ar/wp-content/uploads/2019/04/carniceria.jpg"
+        "url": "https://img.freepik.com/vector-gratis/concepto-carniceria-dibujado-mano_1284-36392.jpg"
     },
     {
         "nombre": "polleria",
-        "url": "https://www.diariodecultura.com.ar/wp-content/uploads/2022/08/polleria.jpg"
+        "url": "https://img.freepik.com/vector-premium/dibujo-dibujos-animados-caracol-corazon-su-cara_9206-16747.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "verduleria",
-        "url": "https://fotos.perfil.com/2021/01/15/trim/987/555/como-impacto-la-inflacion-en-las-verdulerias-portenas-1114624.jpg?webp"
+        "url": "https://img.freepik.com/foto-gratis/gran-conjunto-verduras-aisladas-sobre-fondo-blanco_485709-44.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=sph"
     },
     {
         "nombre": "lacteos",
@@ -25,11 +25,11 @@ export default [
     },
     {
     "nombre": "bebes",
-    "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Baby.jpg/250px-Baby.jpg"
+    "url" : "https://http2.mlstatic.com/D_NQ_NP_797371-MLA69777857524_062023-O.webp"
     },
     {
         "nombre": "adultos",
-        "url" : "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1024/https://vitae-health.com/wp-content/uploads/2023/08/Cuidados-Paliativos_horizontal-1024x425.webp"
+        "url" : "https://img.freepik.com/vector-premium/pareja-ancianos-sentados-sofa-casa-pareja-ancianos-jubilados-enamorados-familia-abuelos_460582-364.jpg"
     },
     {
         "nombre": "general",

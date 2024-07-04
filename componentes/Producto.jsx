@@ -55,7 +55,7 @@ const estilosProducto = StyleSheet.create({
       borderWidth : .5,
       borderStyle : "solid",
       borderColor: '#141E46',
-      height : 140,
+      height : 130,
       overflow : 'hidden'
     },
     detalle :{
@@ -99,6 +99,7 @@ const estilosProducto = StyleSheet.create({
     imagen: {
       width: '100%',
       height: '100%',
+      objectFit : 'fill'
     },
     contEnviosVisible : {
       flexDirection : 'row', 

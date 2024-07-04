@@ -37,7 +37,6 @@ const estilosRubro = StyleSheet.create({
         overflow : 'hidden',
         marginHorizontal: 3,
         marginVertical: 5,
-       
     },
     tituloItem: {
         fontSize: 10,

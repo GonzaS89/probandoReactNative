@@ -35,7 +35,8 @@ const ListaDeProductosScreen = ({route}) => {
           precioProducto = {producto.precio}
           comercioProducto = {producto.comercio}
           domicilioComercio = {producto.domicilioComercio}
-          imagenRubroSeleccionado = {imagenRubroSeleccionado}/>
+          imagenRubroSeleccionado = {imagenRubroSeleccionado}
+          enviosProducto = {producto.envios}/>
         }>
       </FlatList>
     </View>

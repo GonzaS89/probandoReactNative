@@ -10,7 +10,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import HomeScreen from "./src/screens/HomeScreen";
 import ListaDeProductosScreen from "./src/screens/ListaDeProductosScreen";
-import CarritoScreen from "./src/screens/CarritoScreen";
+
 
 
 const Tab = createBottomTabNavigator();

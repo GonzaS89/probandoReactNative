@@ -1,7 +1,22 @@
 import React from 'react';
 import {Text , View, Image, StyleSheet} from 'react-native';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
-const Producto = ({idProducto,nombreProducto, precioProducto,comercioProducto,domicilioComercio, imagenRubroSeleccionado}) => {
+import listaComercios from '../data/listaComercios';
+
+const Producto = ({idProducto,nombreProducto, precioProducto,comercioProducto,imagenRubroSeleccionado}) => {
+
+  let claseEnvios;
+  let direccionComercio;
+
+  listaComercios.map(comercio => {
+     if(comercio.nombre === comercioProducto){direccionComercio = comercio.domicilioComercio;
+    if(comercio.envios) {claseEnvios = estilosProducto.contEnviosVisible}
+  else{claseEnvios = estilosProducto.contEnviosOculto};}
+  })
+
+
+
 
     return (
 
@@ -16,7 +31,11 @@ const Producto = ({idProducto,nombreProducto, precioProducto,comercioProducto,do
               <Text style={estilosProducto.nombre}>{nombreProducto}</Text>
               <Text style={estilosProducto.precio}>$ {precioProducto}</Text>
               <Text style={estilosProducto.comercio}>{comercioProducto}</Text>
-              <Text style={estilosProducto.comercio}>{domicilioComercio}</Text>
+              <Text style={estilosProducto.domicilioComercio}>Ubicada en {direccionComercio}</Text>
+              <View style = {claseEnvios}>
+                <Text style = {{color : 'green' , fontSize : 9}}>Envíos a domicilio</Text>
+              <MaterialIcons name="delivery-dining" size={18} color="green" marginLeft ={5}/>
+              </View>
               </View>
             </View>
 
@@ -33,19 +52,23 @@ const estilosProducto = StyleSheet.create({
       borderRadius: 15,
       alignItems: "center",
       // justifyContent : 'space-between',
-      padding: 10,
       borderWidth : .5,
       borderStyle : "solid",
       borderColor: '#141E46',
-      minHeight : 150
+      height : 140,
+      overflow : 'hidden'
     },
     detalle :{
+      justifyContent : 'center',
       marginLeft : 25,
     },
     nombre: {
-      fontSize: 17.5,
+      fontSize: 13,
+      textTransform : 'uppercase',
       color: "#12372A",
       marginVertical: 5,
+      letterSpacing : -.5,
+      maxWidth: '100%'
     },
     precio: {
       // fontFamily: "Quinta",
@@ -55,31 +78,35 @@ const estilosProducto = StyleSheet.create({
       fontWeight : 'bold',
     },
     comercio : {
-      fontSize : 12.5,
+      fontSize : 10,
+      marginVertical: 1.5,
+      color : '#A79277',
+      textTransform : 'uppercase',
+      letterSpacing : -.5
+
+    },
+    domicilioComercio :{
+      fontSize : 9,
       marginVertical: 1.5,
       color : '#A79277'
     },
-    boton : {
-      width : '90%',
-      height : 40,
-      backgroundColor : '#4793AF',
-      alignItems: 'center',
-      justifyContent : 'center',
-      borderRadius : 15,
-      marginVertical : 5,
-      color : 'red',
-    },
     contImagen : {
-      backgroundColor : '#EEEDEB',
-      width : 110,
-      height : 110
+      justifyContent : 'center',
+      // backgroundColor : '#EEEDEB',
+      width : 100,
+      height : '100%'
     },  
     imagen: {
       width: '100%',
       height: '100%',
-      borderRadius : 20
-      
     },
+    contEnviosVisible : {
+      flexDirection : 'row', 
+      alignItems : 'center'
+    },
+    contEnviosOculto :{
+      display : 'none'
+    }
   });
 
 export default Producto;

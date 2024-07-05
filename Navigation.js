@@ -37,13 +37,6 @@ function LogoCarrito() {
 }
 
 function MyStack() {
-
-  const [items , setItems] = useState(0);
-
-  const actualizarItemsCarrito = (item) => {
-    setItems(item)
-  }
-
  
   return (
     <Stack.Navigator initialRouteName="Home">
@@ -91,7 +84,7 @@ function MyTabs() {
           }
           return <Ionicons name={iconName} size={30} color={'white'} />;
         },
-        tabBarStyle: { backgroundColor: '#0F67B1'  , height : 60}
+        tabBarStyle: { backgroundColor: '#0F67B1'  , height : 50}
       })}
     >
       <Tab.Screen

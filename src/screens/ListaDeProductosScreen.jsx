@@ -1,10 +1,7 @@
-import React ,{ useState} from "react";
+import React, { useState } from "react";
 import {
   View,
-  Text,
-  StyleSheet,
   FlatList,
-  Image,
 } from "react-native";
 
 
@@ -13,11 +10,11 @@ import {
 import catalogoProductos from "../../data/catalogoProductos";
 import Producto from "../../componentes/Producto";
 
-const ListaDeProductosScreen = ({route}) => {
+const ListaDeProductosScreen = ({ route }) => {
 
   const { rubroSeleccionado } = route.params;
   const { imagenRubroSeleccionado } = route.params;
-  
+
   let listaDeProductosSeleccionados = [];
 
   catalogoProductos.map(producto => {
@@ -28,15 +25,15 @@ const ListaDeProductosScreen = ({route}) => {
     <View style={{ flex: 1, alignItems: "center", backgroundColor: "#FFFF80" }}>
       <FlatList
         data={listaDeProductosSeleccionados}
-        renderItem={({ item : producto}) => 
-          <Producto 
-          idProducto = {producto.id}
-          nombreProducto = {producto.nombre}
-          precioProducto = {producto.precio}
-          comercioProducto = {producto.comercio}
-          domicilioComercio = {producto.domicilioComercio}
-          imagenRubroSeleccionado = {imagenRubroSeleccionado}
-          enviosProducto = {producto.envios}/>
+        renderItem={({ item: producto }) =>
+          <Producto
+            idProducto={producto.id}
+            nombreProducto={producto.nombre}
+            precioProducto={producto.precio}
+            comercioProducto={producto.comercio}
+            domicilioComercio={producto.domicilioComercio}
+            imagenRubroSeleccionado={imagenRubroSeleccionado}
+            enviosProducto={producto.envios} />
         }>
       </FlatList>
     </View>

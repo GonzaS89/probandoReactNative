@@ -14,10 +14,7 @@ const Producto = ({idProducto,nombreProducto, precioProducto,comercioProducto,im
     if(comercio.envios) {claseEnvios = estilosProducto.contEnviosVisible}
   else{claseEnvios = estilosProducto.contEnviosOculto};}
   })
-
-
-
-
+  
     return (
 
         <View key={idProducto}

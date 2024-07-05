@@ -185,7 +185,16 @@ export default [
         "precio" : 1000,
         "comercio" : "Forrajeria Juan",
         "categoria" : 'forrajeria',
-        "rubro" : "frutos secos y snacks",
+        "rubro" : "frutos secos",
         "id" : "807"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "1 kg papas fritas",
+        "precio" : 1000,
+        "comercio" : "Forrajeria Juan",
+        "categoria" : 'forrajeria',
+        "rubro" : "snacks",
+        "id" : "808"
     },
 ]

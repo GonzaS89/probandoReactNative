@@ -20,9 +20,11 @@ const Categoria = ({nombreCategoria}) => {
 
     return (
 
-        <View style = {{backgroundColor : '#F9E2AF' ,paddingHorizontal : 10 ,marginHorizontal : 5, paddingVertical : 15 , marginVertical : 5 , borderRadius : 10 , borderWidth : 1 , borderColor : 'black'}}>
+        <View style = {{backgroundColor : '#F5F7F8' ,paddingHorizontal : 10 ,marginHorizontal : 5, paddingVertical : 15 , marginVertical : 5 , borderRadius : 10 , borderWidth : 1 , borderColor : 'black'}}>
 
-            <Text style = {{textTransform : 'uppercase' , fontWeight : 'bold' , fontSize : 17.5 ,textAlign : 'center' ,  marginBottom : 20 , marginLeft : 15 , backgroundColor : '#131842' , color : 'white', paddingVertical : 5 , borderRadius : 20}}>{nombreCategoria}</Text>
+            <Text style = {{textTransform : 'uppercase' , fontWeight : 'bold' , fontSize : 17.5 ,textAlign : 'center' ,  marginBottom : 20 , marginLeft : 15 , color : 'black', paddingVertical : 5 , borderRadius : 5,textShadowColor: '#F1E5D1',
+            textShadowOffset: {width: 1, height:15},
+            textShadowRadius: 50}}>{nombreCategoria}</Text>
 
             <FlatList
                     data={listaDeRubros}

@@ -30,7 +30,7 @@ const Producto = ({idProducto,nombreProducto, precioProducto,comercioProducto,im
               <Text style={estilosProducto.comercio}>{comercioProducto}</Text>
               <Text style={estilosProducto.domicilioComercio}>Ubicada en {direccionComercio}</Text>
               <View style = {claseEnvios}>
-                <Text style = {{color : 'green' , fontSize : 9}}>Envíos a domicilio</Text>
+                <Text style = {{color : 'green' , fontSize : 9.5}}>Envíos a domicilio</Text>
               <MaterialIcons name="delivery-dining" size={18} color="green" marginLeft ={5}/>
               </View>
               </View>
@@ -49,18 +49,22 @@ const estilosProducto = StyleSheet.create({
       borderRadius: 15,
       alignItems: "center",
       // justifyContent : 'space-between',
-      borderWidth : .5,
+      borderWidth : 1,
       borderStyle : "solid",
       borderColor: '#141E46',
       height : 130,
       overflow : 'hidden'
     },
     detalle :{
+      backgroundColor : '#FFF8E3',
       justifyContent : 'center',
-      marginLeft : 25,
+      height : '100%',
+      width : '100%',
+      marginLeft : 10,
+      paddingLeft : 15
     },
     nombre: {
-      fontSize: 13,
+      fontSize: 14,
       textTransform : 'uppercase',
       color: "#12372A",
       marginVertical: 5,
@@ -69,13 +73,13 @@ const estilosProducto = StyleSheet.create({
     },
     precio: {
       // fontFamily: "Quinta",
-      fontSize: 18,
+      fontSize: 20,
       color: "#12372A",
       marginVertical : 5,
       fontWeight : 'bold',
     },
     comercio : {
-      fontSize : 10,
+      fontSize : 11,
       marginVertical: 1.5,
       color : '#A79277',
       textTransform : 'uppercase',
@@ -83,13 +87,13 @@ const estilosProducto = StyleSheet.create({
 
     },
     domicilioComercio :{
-      fontSize : 9,
+      fontSize : 10,
       marginVertical: 1.5,
       color : '#A79277'
     },
     contImagen : {
       justifyContent : 'center',
-      // backgroundColor : '#EEEDEB',
+      alignItems : 'center',
       width : 100,
       height : '100%'
     },  

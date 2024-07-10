@@ -40,19 +40,22 @@ const Categoria = ({ nombreCategoria }) => {
 
 const estiloCategoria = StyleSheet.create({
     container: {
-        backgroundColor: '#F5F7F8',
+        backgroundColor: '#FC2947',
         paddingHorizontal: 10,
         marginHorizontal: 5,
         paddingVertical: 15,
         marginVertical: 5,
-        borderRadius: 10,
+        borderRadius: 30,
         borderWidth: 1,
+        overflow : 'hidden',
         borderColor: 'black'
     },
     texto: {
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        fontSize: 17.5,
+        fontSize: 18,
+        color : 'white',
+        letterSpacing : 2,
         textAlign: 'center',
         marginBottom: 20,
         marginLeft: 15,

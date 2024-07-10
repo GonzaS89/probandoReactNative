@@ -1,11 +1,11 @@
 export default [
     {
         "nombre": "carniceria",
-        "url": "https://img.freepik.com/vector-gratis/concepto-carniceria-dibujado-mano_1284-36392.jpg"
+        "url": "https://img.freepik.com/vector-gratis/carne-bordo_1284-4632.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "polleria",
-        "url": "https://img.freepik.com/vector-premium/dibujo-dibujos-animados-caracol-corazon-su-cara_9206-16747.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
+        "url": "https://img.freepik.com/vector-premium/pollo-entero-crudo_202271-2998.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "verduleria",
@@ -33,7 +33,7 @@ export default [
     },
     {
         "nombre": "general",
-        "url" : "https://img.freepik.com/fotos-premium/jabon-toalla_770606-379.jpg?semt=ais_user"
+        "url" : "https://img.freepik.com/fotos-premium/jabon-toalla_770606-378.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "limpieza de ambientes",
@@ -49,18 +49,18 @@ export default [
     },
     {
         "nombre": "alimento para mascotas",
-        "url" : "https://img.freepik.com/psd-gratis/accesorios-mascotas-aislados_23-2151307118.jpg?semt=ais_user"
+        "url" : "https://img.freepik.com/vector-gratis/bolsas-mascotas-set-comida_24877-51205.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "accesorios para mascotas",
-        "url" : "https://img.freepik.com/fotos-premium/accesorios-perro-sobre-fondo-blanco-cuidado-mascotas_495423-61020.jpg?semt=ais_user"
+        "url" : "https://img.freepik.com/vector-gratis/coleccion-pegatinas-perros-dibujos-animados-retro_23-2150623313.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "frutos secos",
-        "url" : "https://img.freepik.com/foto-gratis/diferentes-frutos-secos_144627-16152.jpg?semt=ais_user"
+        "url" : "https://img.freepik.com/fotos-premium/hay-nueces-nueces-cuencos-plato-generativo-ai_900958-83707.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     },
     {
         "nombre": "snacks",
-        "url" : "https://img.freepik.com/foto-gratis/pila-bocadillo-salado-sabroso_1339-39.jpg?semt=ais_user"
+        "url" : "https://img.freepik.com/vector-premium/comida-vector-bocadillo-ilustracion-comer-conjunto-icono-aislado-postre-bebida-chocolate-dulce-simbolo_1013341-63593.jpg?uid=R154796507&ga=GA1.1.825166051.1719427364&semt=ais_user"
     }
 ]

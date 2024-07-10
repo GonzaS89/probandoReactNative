@@ -22,7 +22,7 @@ const ListaDeProductosScreen = ({ route }) => {
   })
 
   return (
-    <View style={{ flex: 1, alignItems: "center", backgroundColor: "#FFFF80" }}>
+    <View style={{ flex: 1, alignItems: "center", backgroundColor: "#FFF455" }}>
       <FlatList
         data={listaDeProductosSeleccionados}
         renderItem={({ item: producto }) =>

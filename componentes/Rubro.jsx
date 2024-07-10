@@ -32,7 +32,7 @@ const estilosRubro = StyleSheet.create({
         borderColor: '#F1E5D1',
         borderWidth : 2,
         // justifyContent: 'center',
-        backgroundColor: '#F1E5D1',
+        backgroundColor: '#F8FFDB',
         borderRadius:20,
         overflow : 'hidden',
         marginHorizontal: 3,
@@ -55,10 +55,10 @@ const estilosRubro = StyleSheet.create({
     },
     imagen: {
         width: '100%',
-        height: '70%',
+        height: '80%',
         // marginBottom : -50,
         position: 'absolute',
-        bottom: 0
+        bottom: 0,
         // opacity: .60,
         // backgroundColor: 'transparent'
     }

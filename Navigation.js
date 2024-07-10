@@ -48,7 +48,7 @@ function MyStack() {
           headerTitle : 'Productos por categorías',
           headerTitleAlign: 'center',
           headerTitleStyle: { color: "#F0F3FF" },
-          headerStyle: { backgroundColor: "#0F67B1"},
+          headerStyle: { backgroundColor: "#FC2947"},
           // headerShown: false
         }}
       />
@@ -58,7 +58,7 @@ function MyStack() {
         options={({ route }) => ({
           title: `Productos ${route.params.titulo}`,
           headerTitleAlign: 'center', 
-          headerStyle : {backgroundColor : '#0F67B1'},
+          headerStyle : {backgroundColor : '#B60071'},
           headerTitleStyle: { textTransform: 'uppercase' ,color : '#F0F3FF'},
           headerBackVisible : false
         })}
@@ -84,7 +84,7 @@ function MyTabs() {
           }
           return <Ionicons name={iconName} size={30} color={'white'} />;
         },
-        tabBarStyle: { backgroundColor: '#0F67B1'  , height : 50}
+        tabBarStyle: { backgroundColor: '#FC2947'  , height : 50}
       })}
     >
       <Tab.Screen

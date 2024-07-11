@@ -2,9 +2,6 @@ import React from 'react';
 import { Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import listaImagenes from "../data/listaImagenes";
-
-
 
 const Rubro = ( {nombreRubro , imagenRubro} ) => {
 
@@ -32,7 +29,7 @@ const estilosRubro = StyleSheet.create({
         borderColor: '#F1E5D1',
         borderWidth : 2,
         // justifyContent: 'center',
-        backgroundColor: '#F8FFDB',
+        backgroundColor: '#EEEEEE',
         borderRadius:20,
         overflow : 'hidden',
         marginHorizontal: 3,

@@ -45,7 +45,7 @@ const estilosProducto = StyleSheet.create({
       flexDirection : 'row',
       backgroundColor: "white",
       // marginHorizontal: 10,
-      marginVertical : 2,
+      marginVertical : 3,
       borderRadius: 15,
       alignItems: "center",
       // justifyContent : 'space-between',
@@ -60,21 +60,23 @@ const estilosProducto = StyleSheet.create({
       justifyContent : 'center',
       height : '100%',
       width : '100%',
-      marginLeft : 10,
+      // marginLeft : 10,
       paddingLeft : 15
     },
     nombre: {
-      fontSize: 14,
-      textTransform : 'uppercase',
+      fontSize: 16,
+      fontWeight : 'bold',
       color: "#12372A",
       marginVertical: 5,
       letterSpacing : -.5,
-      maxWidth: '100%'
+      maxWidth: '100%',
+      color : '#405D72',
+      letterSpacing : -1
     },
     precio: {
       // fontFamily: "Quinta",
       fontSize: 20,
-      color: "#12372A",
+      color: "#131842",
       marginVertical : 5,
       fontWeight : 'bold',
     },

@@ -45,10 +45,10 @@ function MyStack() {
         component={HomeScreen}
         options={{
           // headerShown : false,
-          headerTitle : 'Productos por categorías',
+          headerTitle : '',
           headerTitleAlign: 'center',
-          headerTitleStyle: { color: "#F0F3FF" },
-          headerStyle: { backgroundColor: "#FC2947"},
+          headerTitleStyle: { color: "#F0F3FF" , fontWeight : 'bold'},
+          headerStyle: { backgroundColor: "#C73659", }
           // headerShown: false
         }}
       />
@@ -56,10 +56,10 @@ function MyStack() {
         name="ListaDeProductos"
         component={ListaDeProductosScreen}
         options={({ route }) => ({
-          title: `Productos ${route.params.titulo}`,
+          title: route.params.titulo,
           headerTitleAlign: 'center', 
-          headerStyle : {backgroundColor : '#B60071'},
-          headerTitleStyle: { textTransform: 'uppercase' ,color : '#F0F3FF'},
+          headerStyle : {backgroundColor : '#C73659'},
+          headerTitleStyle: { color : '#F0F3FF' , fontWeight : 'bold'},
           headerBackVisible : false
         })}
         />
@@ -84,7 +84,7 @@ function MyTabs() {
           }
           return <Ionicons name={iconName} size={30} color={'white'} />;
         },
-        tabBarStyle: { backgroundColor: '#FC2947'  , height : 50}
+        tabBarStyle: { backgroundColor: '#C73659'  , height : 50}
       })}
     >
       <Tab.Screen

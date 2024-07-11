@@ -154,6 +154,33 @@ export default [
     },
     {
         "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "3 lts de jabón líquido Granby (autom)",
+        "precio" : 6000,
+        "comercio" : "Tienda Nancy",
+        "categoria" : 'articulos de limpieza',
+        "rubro" : "lavado de ropa",
+        "id" : "807"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "Jabón en polvo Granby (lavado a mano)",
+        "precio" : 3000,
+        "comercio" : "Tienda Clara",
+        "categoria" : 'articulos de limpieza',
+        "rubro" : "lavado de ropa",
+        "id" : "808"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
+        "nombre" : "Suavizante Borita x 800ml",
+        "precio" : 1800,
+        "comercio" : "Tienda Clara",
+        "categoria" : 'articulos de limpieza',
+        "rubro" : "lavado de ropa",
+        "id" : "810"
+    },
+    {
+        "imagen" : require('../src/iconos/panaderia.png'),        
         "nombre" : "Torta de ojaldre (30 porc.)",
         "precio" : 8500,
         "comercio" : "Panaderia Carlos",
@@ -196,5 +223,69 @@ export default [
         "categoria" : 'forrajeria',
         "rubro" : "snacks",
         "id" : "808"
+    },
+    {      
+        "nombre" : "Milanesa especial con papas",
+        "precio" : 4000,
+        "comercio" : "Resto Morsa",
+        "categoria" : 'comestibles',
+        "rubro" : "comida rapida",
+        "id" : "201"
+    },
+    {      
+        "nombre" : "Milanesa especial con papas",
+        "precio" : 3600,
+        "comercio" : "Sangucheria Victor",
+        "categoria" : 'comestibles',
+        "rubro" : "comida rapida",
+        "id" : "201"
+    },
+    {      
+        "nombre" : "Milanesa especial con papas",
+        "precio" : 4000,
+        "comercio" : "Rotiseria Gramajo",
+        "categoria" : 'comestibles',
+        "rubro" : "comida rapida",
+        "id" : "201"
+    },
+    {      
+        "nombre" : "Hamburguesa grande especial con papas",
+        "precio" : 4000,
+        "comercio" : "Rotiseria Gramajo",
+        "categoria" : 'comestibles',
+        "rubro" : "comida rapida",
+        "id" : "201"
+    },
+    {      
+        "nombre" : "Hamburguesa chica especial con papas",
+        "precio" : 3100,
+        "comercio" : "Resto Morsa",
+        "categoria" : 'comestibles',
+        "rubro" : "comida rapida",
+        "id" : "201"
+    },
+    {      
+        "nombre" : "Pizza grande especial",
+        "precio" : 4500,
+        "comercio" : "Resto Morsa",
+        "categoria" : 'comestibles',
+        "rubro" : "comida rapida",
+        "id" : "201"
+    },
+    {      
+        "nombre" : "3 kgs de helado",
+        "precio" : 8500,
+        "comercio" : "Heladería Pepita",
+        "categoria" : 'comestibles',
+        "rubro" : "heladeria",
+        "id" : "202"
+    },
+    {      
+        "nombre" : "1 kg de arroz Gallo",
+        "precio" : 2000,
+        "comercio" : "Tienda Clara",
+        "categoria" : 'comestibles',
+        "rubro" : "comestibles en gral",
+        "id" : "203"
     },
 ]

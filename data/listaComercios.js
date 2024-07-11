@@ -69,4 +69,24 @@ export default [
         "domicilioComercio" : "B° La Cancha",
         "envios" : true
     },
+    {
+        "nombre" : "Resto Morsa",
+        "domicilioComercio" : "B° La Cancha",
+        "envios" : true
+    },
+    {
+        "nombre" : "Rotiseria Gramajo",
+        "domicilioComercio" : "B° La Cancha",
+        "envios" : true
+    },
+    {
+        "nombre" : "Sangucheria Victor",
+        "domicilioComercio" : "B° La Cancha",
+        "envios" : true
+    },
+    {
+        "nombre" : "Heladería Pepita",
+        "domicilioComercio" : "B° La Cancha",
+        "envios" : true
+    },
 ]

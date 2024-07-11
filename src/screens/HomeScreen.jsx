@@ -16,7 +16,7 @@ const HomeScreen = () => {
 
     return (
 
-        <View style={{ flex: 1, backgroundColor: '#FFF455' }}>
+        <View style={{ flex: 1, backgroundColor: '#EEEEEE' }}>
             <FlatList
                 data={listaDeCategorias}
                 renderItem={({ item }) => <Categoria nombreCategoria={item} />
